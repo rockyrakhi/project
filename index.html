@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+
+    body{
+        background-color: pink;
+    } 
+    div{
+        width: 390px;
+        height: 550px;
+        background-color: rgb(79, 60, 79);
+        position: absolute;
+        top: 150px;
+        left: 550px;
+        border-radius: 30px;
+
+    }
+    input{
+        width: 60px;
+        height: 50px;
+        background-color: rgb(30, 32, 30);
+        box-shadow: 3px 4px 6px black;
+        color: palevioletred;
+        border-radius: 100%;
+        transition: 2s;
+    }
+    #main{
+       width: 250px;
+       border-radius: 30px;
+    }
+    input:hover{
+        background-color: rgb(232, 59, 163);
+    }
+</style>
+</head>
+<body>
+    <div id="container">
+        <form name="cform">
+            <br>
+            <input  id="main" type="text" name="answer">
+            <br><br>
+            <input type="button" value="1" onclick="cform.answer.value+='1'">
+            <input type="button" value="2" onclick="cform.answer.value+='2'">
+            <input type="button" value="3" onclick="cform.answer.value+='3'">
+            <input type="button" value="-" onclick="cform.answer.value+='-'">
+            <br><br>
+            <input type="button" value="4" onclick="cform.answer.value+='4'">
+            <input type="button" value="5" onclick="cform.answer.value+='5'">
+            <input type="button" value="6" onclick="cform.answer.value+='6'">
+            <input type="button" value="+" onclick="cform.answer.value+='+'">
+            <br><br>
+            <input type="button" value="7" onclick="cform.answer.value+='7'">
+            <input type="button" value="8" onclick="cform.answer.value+='8'">
+            <input type="button" value="9" onclick="cform.answer.value+='9'">
+            <input type="button" value="/" onclick="cform.answer.value+='/'">
+            <br><br>
+            <input type="button" value="*" onclick="cform.answer.value+='*'">
+            <input type="button" value="0" onclick="cform.answer.value+='0'">
+            <input type="button" value="."onclick="cform.answer.value+='.'">
+            <input type="button" value="%" onclick="cform.answer.value+='%'">
+            <br><br>
+            <input type="button" value="clear" onclick="cform.answer.value =' '">
+            <input typr="button" value="=" onclick="cform.answer.value =eval(cform.answer.value)">
+
+        </form>
+
+    </div>
+    
+</body>
+</html>
